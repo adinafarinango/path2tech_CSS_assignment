@@ -1,0 +1,187 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr; 
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+img {
+    width: 100px;
+    height: auto; 
+}
+
+
+
+
+
+
+
+/* 1st Column */
+.sidebar {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
+.user-welcome {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.compose-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.folder-list {
+    list-style-type: none;
+}
+
+.folder-list li {
+    margin: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* 2nd Column */
+.email-list-section {
+    padding: 20px;
+    background-color: #999;
+    border-right: 1px solid #ccc;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.email-list {
+    margin-top: 10px;
+}
+
+.email-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.email-mike {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.email-info {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.email-text {
+    color: black; 
+    font-size: 0.9em;
+    margin-right: 10px; 
+}
+
+.email-preview {
+    margin-top: 10px;
+    color: black;
+}
+
+/* 3rd Column */
+.email-content-section {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.email-content {
+    margin-bottom: 20px;
+}
+
+.sender-name {
+    margin-bottom: 10px;
+}
+
+.recepiant-name {
+    margin-bottom: 20px;
+}
+
+.email-body {
+    padding: 15px;
+    border-radius: 5px;
+    line-height: 1.6;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+/* Reply Section */
+.reply-section textarea {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.send-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        display: block; 
+    }
+
+    .sidebar {
+        margin-bottom: 15px; 
+    }
+
+    .email-list-section {
+        margin-bottom: 15px; 
+    }
+}
